@@ -21,11 +21,38 @@
             padding: 20px;
             color: white;
         }
+        /* Tag name selector */
         div{
             background-color: blue;
             color: white;
             padding: 20px;
         }
+        /* ID selector */
+        #header{
+            font-size: 48px;
+        }
+        .blueviolet{
+            background-color: blueviolet;
+        }
+        /* specific class name selector */
+        p.blueviolet {
+            color: white;
+        }
+        h4.blueviolet {
+            color: yellow;
+            padding: 10px;
+        }
+        /* This is a group selector */
+        h2, h3, h4 {
+            background-color: chartreuse;
+        }
+        /* General classname selector */
+        .twohtwos{
+            background-color: brown;
+        }
+        /* TODO: Create 4 h4 tags, apply the id selector to one
+        apply the specific classname selector to the second one, then apply the
+        general classname to the last two h4s */
     </style>
     <script>
         console.log("Hello World!!")
@@ -33,9 +60,14 @@
 </head>
 <body>
     <h1 id="header">Web3 Dapp</h1>
+    <h2 class="twohtwos">Solana</h2>
+    <h2 class="twohtwos">Solana 2</h2>
+    <h2>Solana</h2>
+    <h3>Hamster</h3>
+    <h4>Dogs</h4>
     <hr />
-    <p><strong>Ethereum Account:</strong>  9989892iuoowe989## </p>
-    <p><strong>Total Amount:</strong> 0.9000 ETH <sup><strong>+200%</strong></sup> <sub>-10%</sub> </p> 
+    <p class="blueviolet"><strong>Ethereum Account:</strong>  9989892iuoowe989## </p>
+    <p ><strong>Total Amount:</strong> 0.9000 ETH <sup><strong>+200%</strong></sup> <sub>-10%</sub> </p> 
    
     <p>List of cryptocurrencies</p>
     <ol>
@@ -43,7 +75,7 @@
         <li>Solana</li>
         <li>Ton</li>
     </ol>
-    <h4>List of blockchains</h4>
+    <h4 class="blueviolet">List of blockchains</h4>
     <ul style="display: flex; gap: 20px;">
         <li>Home</li>
         <li>Blog</li>
@@ -74,12 +106,12 @@
             </tr>
          </table>
     </section>
-    <div style="background-color: goldenrod; padding: 20px;" >
+    <div class="blueviolet" >
         <p>Tron</p>
     </div>
-    <span style="background-color: aquamarine;">sdjskdjisjd</span>
+    <span>sdjskdjisjd</span>
     <footer>
-        <p>Footer</p>
+        <p href="#header">Footer</p>
     </footer>
     
     
