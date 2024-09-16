@@ -16,15 +16,11 @@
         p{
             background-color: coral;
         }
-        section{
-            background-color: rgb(5, 65, 2);
-            padding: 20px;
-            color: white;
-        }
+
         /* Tag name selector */
         div{
             background-color: blue;
-            color: white;
+            color: rgb(255, 255, 255);
             padding: 20px;
         }
         /* ID selector */
@@ -71,6 +67,19 @@
             font-size: 10px;
             padding: 20px;
         }
+        div.sectioned-div section {
+            background-color: rgb(99, 216, 20);
+            padding: 10px;
+            color: rgb(255, 255, 255);
+            font-style: italic; 
+        }
+        div.sectioned-div section p div{
+            color: rgb(67, 5, 5);
+            background-color: aqua;
+        }
+        #inner-div {
+            color: black;
+        }
     </style>
     <script>
         console.log("Hello World!!")
@@ -78,11 +87,23 @@
 </head>
 <body>
     <h1 id="header">Web3 Dapp</h1>
-    <h2 class="twohtwos">Solana</h2>
-    <h2 class="twohtwos">Solana 2</h2>
-    <h2>Solana</h2>
-    <h3>Hamster</h3>
-    <h4>Dogs</h4>
+    <div class="sectioned-div">
+        <section>
+            <p> This is an inner p tag
+                <div id="inner-div">This is an inner div</div>
+            </p>
+        </section>
+        <h2 class="twohtwos">Solana</h2>
+        <h2 class="twohtwos">Solana 2</h2>
+        <h2>Solana</h2>
+        <h3>Hamster</h3>
+        <h4>Dogs</h4>
+    </div>
+
+    <div>
+        <section></section>
+    </div>
+
     <hr />
     <p class="blueviolet"><strong>Ethereum Account:</strong>  9989892iuoowe989## </p>
     <p ><strong>Total Amount:</strong> 0.9000 ETH <sup><strong>+200%</strong></sup> <sub>-10%</sub> </p> 
@@ -175,11 +196,14 @@
         ></iframe> -->
     </div>
     
-    <div>
+    <div style="text-align: center;">
         <h3>This is a Video</h3>
         <img src="image.png" 
-        width="400"
-        alt="An image of USA department of state" />
+        width="40"
+        height="40"
+        alt="An image of USA department of state"
+        style="border-radius: 50%;"
+        />
     </div>
     <hr>
     <form action="/sign-up" method="post">
