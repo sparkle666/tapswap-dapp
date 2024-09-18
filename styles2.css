@@ -3,3 +3,33 @@
 * {
     font-family: "Poppins", sans-serif;
 }
+
+body{
+    background-color:black;
+    margin: auto;
+    padding: 100px;
+    color: white;
+}
+table{
+    background-color: azure;
+    margin: auto;
+    color: black;
+}
+
+/* made an id for the blockchain skills*/
+
+#bs{
+    background-color:wheat;
+    color:black;
+    padding: 20px;
+    
+}
+
+/* made an id for the daily web3 task*/
+
+#dwt{
+    background-color: blueviolet;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
