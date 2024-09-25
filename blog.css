@@ -46,8 +46,8 @@
 
 #tip img {
     display: flex;
-    /* height: 500px; */
-    width: 100%;
+    /* height: 600px; */
+    width: 60%;
     border-radius: 10px;
 
 
@@ -58,7 +58,7 @@
 /* Tech button style */
 h3{
     background-color: rgb(78, 52, 230);
-    width: 25%;
+    width: 20%;
     text-align: center;
     border-radius: 50px;
     padding: 8px;
