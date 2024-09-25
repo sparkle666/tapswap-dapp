@@ -3,6 +3,8 @@
 * {
     font-family: "Poppins", sans-serif;
 }
+
+/* Nav bar styles */
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -11,6 +13,7 @@
     background-color: rgb(27, 1, 35);
     color: white;
     padding: 10px;
+
 }
 .navbar li {
     /* list-style: none; */
@@ -37,10 +40,52 @@
 .navbar-links{
     display: flex;
 }
+/* End of Nav bar */
 
-#tip{
+/* first section of the site containing image */
+
+#tip img {
     display: flex;
-    height: 600px;
-    width: 1000px;
+    /* height: 500px; */
+    width: 100%;
+    border-radius: 10px;
 
+
+}
+
+/* End of first section */
+
+/* Tech button style */
+h3{
+    background-color: rgb(78, 52, 230);
+    width: 25%;
+    text-align: center;
+    border-radius: 50px;
+    padding: 8px;
+    color: white;
+}
+/* end of tech button */
+
+/* start of middle section of new tech */
+
+#sect {
+
+}
+
+/* last section */
+
+#prof {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+#prof img {
+    height: 50px; width: 50px; 
+    border-radius: 50%;
+}
+
+#prof div h4 {
+    margin-bottom: -18px;
 }
