@@ -5,6 +5,95 @@
     <link rel="stylesheet" href="blog.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Developer Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            width: 100%;
+            height: 300px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            /* Main axis and Cross Axis */
+        }
+
+        .item{
+            border: 2px solid blue;
+            width: 100px;
+            /* height: 40px; */
+        }
+        .item-2{
+            /* flex-grow: 1; */
+        }
+        .login-container{
+            display: flex;
+            background-color: rgb(186, 186, 254);
+            flex-direction: row;
+            justify-content: center;
+            /* You use align-items if direction is row
+            to layout the items of flex container,
+            across the cross axis/column */
+            align-items: center; 
+            padding: 10px;
+            height: 500px;
+        }
+        .login{
+            background-color: white;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            padding: 20px;
+            border-radius: 10px;
+            gap: 5px;
+        }
+        .login h2 {
+            text-align: center;
+        }
+        .login div p {
+            text-align:  right;
+        }
+        .layout-container{
+            /* height: 50vh; */
+            background-color: rgb(124, 225, 245);
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        /* .layout-item{
+            background-color: aqua;
+        } */
+        .layout-item div:first-child{
+            background-color: rgb(35, 197, 32);
+        }
+        .layout-item div:nth-child(3){
+            background-color: rgb(204, 255, 168);
+        }
+        .flex-container{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        /* width 500px - For Mobile
+        width 500px - 900px - For Tablets
+        width 1024px and 2000px - For Laptops
+        */
+
+        @media (max-width: 600px) {
+        .flex-container{
+            /* display: flex; */
+            flex-direction: column;
+            /* gap: 10px; */
+        }
+        }
+
+    </style>
 </head>
 <body>
     <!--  Nav bar -->
@@ -43,8 +132,60 @@
             <p>2h ago</p>
         </div>
         
-
     </div>
-
+    <i class="fa-solid fa-house-user" style="font-size: 100px;"></i>
+    <i class="fa-sharp-duotone fa-solid fa-wand-magic-sparkles"></i>
+    <div class="container">
+        <div class="item item-1" style="display: flex; align-items: center; gap: 5px;">
+            <i class="fa-sharp-duotone fa-solid fa-wand-magic-sparkles"></i>
+            <div>  
+                <p>Cash Deposits</p>
+                <p>1.7</p>
+                <p>51.5% Earnings</p>
+            </div>
+        </div>
+        <div class="item item-1" style="display: flex; align-items: center; gap: 5px;">
+            <i class="fa-sharp-duotone fa-solid fa-wand-magic-sparkles"></i>
+            <div>  
+                <p>Cash Deposits</p>
+                <p>1.7</p>
+                <p>51.5% Earnings</p>
+            </div>
+        </div>
+        <div class="item item-2">item 2</div>
+    </div>
+    <div style="height: 100px;"></div>
+    <!-- Login page demo with flex box -->
+    <div class="login-container">
+        <div class="login">
+            <h2>Login</h2>
+            <label for="">Username</label>
+            <input type="text" name="Username" id="">
+            <label for="">Password</label>
+            <input type="password" name="Password" id="">
+            <div style="text-align: left;">
+                <p>Forgot password</p>
+            </div>
+            <button type="submit">Login</button>
+        </div>
+    </div>
+    <!-- Flex layout -->
+     <div class="layout-container">
+        <div class="layout-item" style="background-color: aqua;">Header</div>
+        <div class="layout-item" style="background-color: rgb(74, 203, 203);">Navigation</div>
+        <div class="layout-item flex-container">
+            <div style="flex-grow: 1;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fuga hic eius rerum culpa. Pariatur odio iusto quidem commodi qui nemo. Voluptate aspernatur eveniet nemo saepe porro omnis, natus itaque.
+            </div>
+            <div style="flex-grow: 1; display: flex; gap: 10px; flex-direction: column;">
+                <div style="background-color: brown; flex-grow: 1;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iste quisquam, reprehenderit explicabo tenetur perspiciatis expedita sunt necessitatibus fugit quibusdam itaque minima harum rerum debitis aut, iusto ab asperiores nihil?</div>
+                <div style="background-color: blueviolet; flex-grow: 1;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, iusto impedit minima voluptate atque autem consequatur architecto commodi eius quae provident laborum enim maiores odit tenetur, possimus quasi saepe. Id!</div>
+            </div>
+        </div>
+        <div style="background-color: aquamarine;">Footer</div>
+     </div>
+     <div>
+        <p class="h-[100vh] gjfjgodj">Hello tailwindcss!!</p>
+     </div>
 </body>
 </html>
