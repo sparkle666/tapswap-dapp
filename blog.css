@@ -89,3 +89,21 @@ h3{
 #prof div h4 {
     margin-bottom: -18px;
 }
+
+/* flex  box */
+
+.flex {
+    background-color: aqua;height: 50vh; 
+    display: flex; flex-direction: column;gap: 10px; 
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box{
+    height:50px;
+    width: 50vw;
+}
+
+.top-bottom {
+    background-color: blue;height: 50px; color: aliceblue;
+}
