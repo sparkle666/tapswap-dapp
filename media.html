@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query and Tailwindcss</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <style>
+        .container{
+            background-color: black;
+            color: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container div {
+            background-color: rgb(62, 10, 10);
+        }
+        /* 0 - 500px width */
+        /* 500px - 1000px width Tablets */
+        /* 1000px and above */
+        /* @media screen and (min-width: 500px) {
+            .container{
+                background-color: aqua;
+                flex-direction: row;
+            } */
+            /* .container div { */
+            /* background-color: red; */
+            /* flex-grow: 1; */
+        /* } */
+        /* } */
+        /* @media  screen and (min-width: 800px) {
+            .container{
+                background-color: green;
+            }
+        } */
+         button{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            outline: 0;
+            border: 0px;
+            border-radius: 6px;
+            margin-top: 10px;
+            box-shadow: 100px blue;
+            background-image: linear-gradient(to left, rgb(23, 23, 133), rgb(37, 37, 236));
+         }
+
+         .gradient-btn {
+      position: relative;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #111;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .gradient-btn:hover{
+        background-image: linear-gradient(to left, rgb(23, 23, 133), rgb(37, 37, 236));
+    }
+
+    .gradient-btn::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+      animation: rotate 3s linear infinite;
+      z-index: -1;
+    }
+
+    .gradient-btn::after {
+      content: '';
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      right: 3px;
+      bottom: 3px;
+      background-color: #111;
+      border-radius: 8px;
+      z-index: -1;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animate__animated">Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+    </div>
+
+    <button >Submit</button>
+    <button class="gradient-btn">Gradient Button</button>
+
+</body>
+</html>
+
