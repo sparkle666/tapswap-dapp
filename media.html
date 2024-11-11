@@ -8,108 +8,145 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <style>
-        .container{
-            background-color: black;
-            color: white;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .container div {
-            background-color: rgb(62, 10, 10);
-        }
-        /* 0 - 500px width */
-        /* 500px - 1000px width Tablets */
-        /* 1000px and above */
-        /* @media screen and (min-width: 500px) {
-            .container{
-                background-color: aqua;
-                flex-direction: row;
-            } */
-            /* .container div { */
-            /* background-color: red; */
-            /* flex-grow: 1; */
-        /* } */
-        /* } */
-        /* @media  screen and (min-width: 800px) {
-            .container{
-                background-color: green;
-            }
-        } */
-         button{
-            background-color: blue;
-            color: white;
-            padding: 10px;
-            width: 100%;
-            outline: 0;
-            border: 0px;
-            border-radius: 6px;
-            margin-top: 10px;
-            box-shadow: 100px blue;
-            background-image: linear-gradient(to left, rgb(23, 23, 133), rgb(37, 37, 236));
-         }
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- <script src="app.js"></script> -->
+   <script>
 
-         .gradient-btn {
-      position: relative;
-      padding: 10px 20px;
-      font-size: 16px;
-      color: #fff;
-      background-color: #111;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      overflow: hidden;
-      z-index: 1;
-    }
-    .gradient-btn:hover{
-        background-image: linear-gradient(to left, rgb(23, 23, 133), rgb(37, 37, 236));
-    }
+      // Variables
+      let name  // variable declaration
+      name = "Sixtus" // Variable Initialisation
+      let age = 90
 
-    .gradient-btn::before {
-      content: '';
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
-      animation: rotate 3s linear infinite;
-      z-index: -1;
-    }
+      let myGrade = 90
+      // Type cases: Pascal case
+      // Example: myScore, canEdit
 
-    .gradient-btn::after {
-      content: '';
-      position: absolute;
-      top: 3px;
-      left: 3px;
-      right: 3px;
-      bottom: 3px;
-      background-color: #111;
-      border-radius: 8px;
-      z-index: -1;
-    }
+      // case sensitivity
+      // PS: Js is case-sensitive
+      let mygrade = 100
+      console.log(mygrade, " ", myGrade)
 
-    @keyframes rotate {
-      0% {
-        transform: rotate(0deg);
+
+    
+      // Outputing information on the screen
+      // document.write("<h2>Name: James</h2>")
+
+
+      // Comments
+      // Data types: string, boolean, number, arrays, object,
+      // const
+      
+      let score = 10
+      let surname = "Nwaobdoo"
+
+      let a, b, c, height, area
+
+      a = 10
+      b = 20
+      c = 60
+
+      console.log(a, b, c)
+
+      // Arrays: Are a hetergenous list of elements
+      
+      let myPoints = [10, 20, 30, "Another", true]
+      console.log("Lenght: ", a[2])
+
+      // Basic Array Operations
+
+      let tokens = ["USDT", "BTC", "TON"]
+      // Pop function, used for removing the last item in an array
+
+      tokens.pop()
+      console.log(tokens)
+
+
+      // PUSH operation/function
+
+      tokens.push("TON")
+
+      console.log(tokens)
+
+      // Objects
+
+      const person = {
+        name: "Sixtus",
+        age: 25,
+        gender: "Male",
       }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-    </style>
+
+
+      console.log("My name is", person.name, " I am ", 
+      person.age, " years old, ", "I identify as a ",
+      person.gender
+      )
+
+      person.eyes = 2
+      
+      // delete person.eyes
+      // delete person.let
+      // delete person.gender
+
+      person.gender = "Male"
+
+      console.log(person)
+
+      // Destructuring an objects
+      
+      let {gender, eyes} = person
+
+      document.write(gender, " ", eyes)
+
+      
+
+    
+
+      // ------------------------  Edison Pratice
+
+      let fruit, city
+
+      fruit = "Orange"
+      city = "Lagos"
+
+      console.log(fruit, city)
+
+      document.write(fruit + city)
+
+
+
+
+
+
+
+
+      //---------------------------- END
+      
+      // String Concatenation
+      document.write(fruit + city)
+
+
+      // Arithemtic operators: + - / *
+
+      document.write("<h2>", 4 + 3, "</h2>" )
+      document.write("<h2>", 4 - 3, "</h2>" )
+      document.write("<h2>", 4 * 3, "</h2>" )
+      document.write("<h2>", 4 / 3, "</h2>" )
+      document.write("<h2>", 10 % 4, "</h2>" )
+      document.write("<h2>", 10 ** 4, "</h2>" )
+
+      // Asignment operators: += -=
+
+      // Maths library
+      // js functions
+      // FLow control statement if else, for loop, while
+
+    </script>
+    <script>
+    </script>
 </head>
 <body>
-    <div class="container">
-        <div class="animate__animated">Item 1</div>
-        <div>Item 2</div>
-        <div>Item 3</div>
-    </div>
 
-    <button >Submit</button>
-    <button class="gradient-btn">Gradient Button</button>
+  <h1>Hello World</h1>
 
 </body>
 </html>

@@ -6,7 +6,7 @@
 
 /* Nav bar styles */
 .navbar{
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     align-items: center;
     list-style: none;
