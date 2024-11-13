@@ -35,7 +35,7 @@
       // Comments
       // Data types: string, boolean, number, arrays, object,
       // const
-      
+
       let score = 10
       let surname = "Nwaobdoo"
 
@@ -137,7 +137,48 @@
       // Asignment operators: += -=
 
       // Maths library
+
+      document.write("<h2> PI = ", Math.PI, "</h2>")
+      document.write("<h2> Square of 2 = ", Math.SQRT2, "</h2>")
+      
+      document.write("<h2> Random Number = ", Math.floor(Math.random() * 1000), "</h2>")
+      
+      document.write("<h2> Raise to the power = ", Math.pow(2, 4), "</h2>")
+      document.write("<h2> Log of 100 = ", Math.log(100), "</h2>")
+      document.write("<h2> Log base 10 to 100 = ", Math.log10(1000), "</h2>")
+
+
       // js functions
+
+      function addTwoNumbers(a, b){
+        document.write("<h2> Sum = ", a + b, "</h2>")
+
+      }
+
+      addTwoNumbers(20000, 20)
+      
+      function greet(){
+        document.write("Good Morning...")
+      }
+
+      let force = (mass, acceleration = 9.8) => {
+        document.write("<h2> Force = ", mass * acceleration, " Newtons</h2>")
+
+        return mass * acceleration
+      }
+
+      let forceofObject = force(200, 9.7)
+
+      document.write(forceofObject)
+
+      // Arrow functions
+      let speedOfAnObj = (distance, time) => {
+        document.write("<h2> Speed  = ", distance / time, "</h2>")
+      }
+
+      speedOfAnObj(200, 10)
+      
+      // greet()
       // FLow control statement if else, for loop, while
 
     </script>
