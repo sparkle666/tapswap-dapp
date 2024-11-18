@@ -244,7 +244,7 @@
         if(counter == 4) break
       }
       console.log("This will show if the loop is broken out of.")
-      
+
 
       // 1. Create a variable "points" set it to 20 and then write a while loop to reduce the value of points by 2 till it gets to 4
       
@@ -260,7 +260,36 @@
         
       }
       
-      
+      // For Loops: USECASE: Use for loop to loop over an array
+      let index = 10
+
+      for(index; index > 0; index = index - 1){
+        console.log("Inside the for loop index is: ", index)
+
+        if(index === 5) {
+          console.log("The value of index currently is 5 so i will break from the loop")
+          break
+        }
+      }
+
+      // Outputing from the back
+
+      let shoppingCart = ["Iphone", "Laptop", "Macbook", "Samsung S24 Ultra"]
+
+      index = shoppingCart.length - 1
+
+      for(index; index >= 0; index = index - 1){
+        console.log(shoppingCart[index])
+      }
+
+      // Outputing from the front??
+
+      index = 0
+
+      for(index; index < shoppingCart.length; index--){
+        console.log("The value at the index of the shoppingcart is: ", shoppingCart[index])
+      }
+
       
       </script>
     <script>
