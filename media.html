@@ -345,6 +345,7 @@
         return sum
       }
 
+      // Call function
       let anotherSum = _addNum(600, 80, 100)
 
       console.log(anotherSum)
@@ -355,14 +356,16 @@
       // function
 
       function priceOfBtc(price){
-        let multi = priceOfBtc * 10
-        console.log("The total price of 10 btc is: " multi)
+        let multi = price * 10
+        console.log("The total price of 10 btc in naira is: ", multi)
       }
 
       // arrow function
 
-      let BtcToNaira =(price)
+      let BtcToNaira = (price) => {
+        
         let multi = price * 10
+      }
         
 
 
