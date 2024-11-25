@@ -310,18 +310,48 @@
       // Function Creation
 
        function addNum(num1, num2, num3){
-
+        // Local variables: THey can only be accessed inside of the function block,
         let sum = num1 + num2 - num3
 
-        console.log("The sum of that is: ", sum)
+        let thisIsLocalScope = "Inside of a function"
+
+        console.log(name)
+        
+
+        return sum
+
+        // console.log("The sum of that is: ", sum)
 
        }
+
+
+      //  console.log("The value Inside of function addNum", thisIsLocalScope)
       //  Function calling / invocation
 
-       addNum(900, 30, 200)
+       let newSum = addNum(900, 30, 200)
+
+      //  Scoping In JS
+
+       console.log("The sum that was gotten from the addNum function is: ", newSum)
 
       //  Create a function called addFourNumbers, takes in 4 parameters all numbers, then sum them all up and console.log the answer
       // Finally call the function twice with different valuss.
+
+      //  Arrow functions: They are derivatives of a function with sole focus on the change of syntax while fulfuilling the same purpose
+
+      let _addNum = (num1, num2, num3) => {
+        let sum = num1 + num2 - num3
+
+        return sum
+      }
+
+      let anotherSum = _addNum(600, 80, 100)
+
+      console.log(anotherSum)
+
+      // Write a normal function and an arrow funcion to calculate price of  10 btc in naira given that 1 btc = 2000 naira.
+      // The function will take a parameter of the priceOfBtc. The name of the function will be btcToNaira().
+
 
       
       </script>
