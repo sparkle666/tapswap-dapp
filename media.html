@@ -358,6 +358,7 @@
       function priceOfBtc(price){
         let multi = price * 10
         console.log("The total price of 10 btc in naira is: ", multi)
+        return multi
       }
 
       // arrow function
@@ -365,7 +366,12 @@
       let BtcToNaira = (price) => {
         
         let multi = price * 10
+        return multi
       }
+
+      let totalPrice = priceOfBtc(10)
+
+      console.log(totalPrice)
         
 
 
