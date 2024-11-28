@@ -402,6 +402,14 @@
 
       
       </script>
+
+    <style>
+      .container{
+        background-color: black;
+        color: white;
+        text-align: center;
+      }
+    </style>
 </head>
 <body>
 
@@ -409,10 +417,10 @@
     Hello world 1
   </p>
   <h1 id="heading2">Hello World</h1>
-  <h1>Hello World</h1>
-  <h1>Hello World</h1>
-  <h1>Hello World</h1>
-  <h1>Hello World</h1>
+  <h1 id="heading3" style="color: blue;">BTC</h1>
+  <h1 id="heading4">Ton</h1>
+  <h1>Major</h1>
+  <h1>Memefi</h1>
 
 
   <script>
@@ -439,8 +447,23 @@
 
 
     let heading2 = document.getElementById("heading2")
-
+    
     heading2.textContent = "CryptoCurrency"
+    
+    let heading3 = document.getElementById("heading3")
+    // Change element styles
+    
+    heading3.style.color = "green"
+    heading3.style.fontSize = "40px"
+    heading3.style.backgroundColor = "Black"
+    
+    // Adding Class names to elements
+    
+    let heading4 = document.getElementById("heading4")
+    heading4.classList.add("container")
+
+    // Task 2: Create a css class known as "panel" and background color of blue, text color of white, border and padding
+    // Use js for adding the css class to the next h2.
 
   </script>
 
