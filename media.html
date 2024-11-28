@@ -409,6 +409,13 @@
         color: white;
         text-align: center;
       }
+
+      .panel{
+        background-color: blue;
+        color: white;
+        padding: 100px;
+        border: 50%;
+      }
     </style>
 </head>
 <body>
@@ -419,7 +426,7 @@
   <h1 id="heading2">Hello World</h1>
   <h1 id="heading3" style="color: blue;">BTC</h1>
   <h1 id="heading4">Ton</h1>
-  <h1>Major</h1>
+  <h2 id="hq">Major</h2>
   <h1>Memefi</h1>
 
 
@@ -462,8 +469,13 @@
     let heading4 = document.getElementById("heading4")
     heading4.classList.add("container")
 
+    let hq = document.getElementById("hq")
+    hq.classList.add("panel")
     // Task 2: Create a css class known as "panel" and background color of blue, text color of white, border and padding
     // Use js for adding the css class to the next h2.
+
+
+
 
   </script>
 
