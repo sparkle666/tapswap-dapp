@@ -10,7 +10,7 @@
     />
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <!-- <script src="app.js"></script> -->
-   <script>
+   <script defer>
 
       // Variables
       let name  // variable declaration
@@ -393,21 +393,51 @@
         return base ** exponent
       }
 
-      let power(base, exponent = 2) => base ** exponent;
+      let _power = (base, exponent = 2) => base ** exponent;
 
-      console.log(power)
-
-
+      console.log(power(10, 2))
 
       // end of assignment
+
+
       
       </script>
-    <script>
-    </script>
 </head>
 <body>
 
+  <p id="heading1">
+    Hello world 1
+  </p>
+  <h1 id="heading2">Hello World</h1>
   <h1>Hello World</h1>
+  <h1>Hello World</h1>
+  <h1>Hello World</h1>
+  <h1>Hello World</h1>
+
+
+  <script>
+      // DOM
+    /***
+     * DOM mean Document Object Model
+     * 
+     *  **/
+    // Manipulating the DOM or HTML
+    // Single Element Selections By ID
+
+       
+    let heading1 = document.getElementById("heading1")
+
+    console.log("The heading is: ",  heading1)
+    console.log("The heading textContent is: ", heading1.textContent)
+    console.log("The heading innerHTML is: ", heading1.innerHTML)
+
+    // For updating textContent of a selected element
+    heading1.textContent = "Hello world 2"
+    heading1.innerHTML = "<h2> Another hello world <span style = 'color: green'> a new badge </span><h3> nfidsjfois </h3> </h2>"
+
+    // Task: Get the element by id of "heading2", log to the screen and then change the textContent to "CryptoCurrency"
+
+  </script>
 
 </body>
 </html>
