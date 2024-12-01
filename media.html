@@ -419,8 +419,8 @@
   <h1 id="heading2">Hello World</h1>
   <h1 id="heading3" style="color: blue;">BTC</h1>
   <h1 id="heading4">Ton</h1>
-  <h1>Major</h1>
-  <h1>Memefi</h1>
+  <h1 class="container card">Major</h1>
+  <h1 class="container">Memefi</h1>
 
 
   <script>
@@ -464,6 +464,29 @@
 
     // Task 2: Create a css class known as "panel" and background color of blue, text color of white, border and padding
     // Use js for adding the css class to the next h2.
+
+    // DIVERSION TO CALLBACK FUNCTIONS
+
+
+    function greetUser (firstName, callback){
+      console.log("Your first name is: ", firstName)
+      callback(firstName)
+    }
+
+    function greetMorning(firstName){
+      console.log("Good Morning!! ", firstName)
+    }
+
+    greetUser("Sixtus", greetMorning)
+
+
+    // DOM MANIPULATION document.getElementsByClassName
+
+    const h1 = document.getElementsByClassName("card")
+    console.log(h1[0].textContent)
+
+    // TASK: Create a html p element name it "navbar" as className, use the document model to extract this p tag and get the text content.
+
 
   </script>
 
