@@ -409,6 +409,13 @@
         color: white;
         text-align: center;
       }
+
+      .panel{
+        background-color: blue;
+        color: white;
+        padding: 100px;
+        border: 50%;
+      }
     </style>
 </head>
 <body>
@@ -421,6 +428,8 @@
   <h1 id="heading4">Ton</h1>
   <h1 class="container card">Major</h1>
   <h1 class="container">Memefi</h1>
+  <h2 id="hq">Major</h2>
+  <h1>Memefi</h1>
 
 
   <script>
@@ -462,6 +471,8 @@
     let heading4 = document.getElementById("heading4")
     heading4.classList.add("container")
 
+    let hq = document.getElementById("hq")
+    hq.classList.add("panel")
     // Task 2: Create a css class known as "panel" and background color of blue, text color of white, border and padding
     // Use js for adding the css class to the next h2.
 
@@ -486,6 +497,8 @@
     console.log(h1[0].textContent)
 
     // TASK: Create a html p element name it "navbar" as className, use the document model to extract this p tag and get the text content.
+
+
 
 
   </script>
