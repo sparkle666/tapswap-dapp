@@ -429,15 +429,41 @@
   <h1 class="container card">Major</h1>
   <h1 class="container">Memefi</h1>
   <h2 id="hq">Major</h2>
-  <h1>Memefi</h1>
+  <h1 id="memefi">Memefi</h1>
 
 
   <!-- Task for today -->
 
   <p class="navbar">lorem</p>
 
+  <button style="padding: 30px;" onmouseover="alert('You clicked this button')">Click me!!</button>
+  <button style="padding: 30px;" onclick="alert('You clicked this button')">Click me!!</button>
+  <button style="padding: 30px;" id = "updateBtn" >Update Memefi to Hamster</button>
+  <button style="padding: 30px;" id = "resetButton" >Reset</button>
 
+  <!-- Testing adding event listeners -->
   <script>
+
+    // Task: Update the memefi h1 tag to Hamster.
+    // Step 1: Target the button and the h1
+
+    let updateBtn = document.getElementById("updateBtn")
+    let memefi = document.getElementById("memefi")
+    let resetButton = document.getElementById("resetButton")
+
+    updateBtn.addEventListener("click", function (){
+      memefi.textContent = "Hamster"
+    })
+
+    resetButton.addEventListener("click", function() {
+      memefi.textContent = "Memefi"
+
+    })
+
+    // Task: Create 2 buttons know as updateScore, resetScore, add event listeners to them. Then create a single p tag with id.
+    // Update the textContent of the single p tag from initial number of 10 to 100
+
+
       // DOM
     /***
      * DOM mean Document Object Model
@@ -505,6 +531,23 @@
 
     const p = document.getElementsByClassName("navbar")
     console.log(p[0].textContent)
+
+    // Events
+    // What are Events? Events are actions performed on the web browser that javascript can respond to
+
+    // Types of Events
+    /**
+     * 1. Mouse Events: Example of these types of events are: click, dbclick, mousedown, mouseup, mouseover(hover)
+     * 2. Keyboard Events: keydown, keyup
+     * 3. Form Events: submit, change, focus, blur
+     * 3. Window Events: scroll, resize, load
+     * 4. Touch events
+     * 
+     * Event Listeners: These are functions that allows you to subscribe, or get notified once an event or interaction occurs.
+     * 
+     *  */
+
+
 
 
 
