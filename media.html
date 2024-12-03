@@ -431,6 +431,11 @@
   <h2 id="hq">Major</h2>
   <h1 id="memefi">Memefi</h1>
 
+  <p id="sc">Score</p>
+
+  <button style = "padding: 25px;" id="updatescore">Update Score</button>
+  <button style="padding: 25px;" id="resetscore">Reset Score</button>
+
 
   <!-- Task for today -->
 
@@ -462,6 +467,18 @@
 
     // Task: Create 2 buttons know as updateScore, resetScore, add event listeners to them. Then create a single p tag with id.
     // Update the textContent of the single p tag from initial number of 10 to 100
+
+    let updateScore = document.getElementById("updatescore")
+    let resetScore = document.getElementById("resetscore")
+    let sc = document.getElementById("sc")
+
+    updateScore.addEventListener("click", function(){
+      sc.textContent = "score 100"
+    })
+
+    resetScore.addEventListener("click", function(){
+      sc.textContent = "Score 10"
+    })
 
 
       // DOM
