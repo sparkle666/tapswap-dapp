@@ -441,13 +441,20 @@
 
   <p class="navbar">lorem</p>
 
-  <button style="padding: 30px;" onmouseover="alert('You clicked this button')">Click me!!</button>
   <button style="padding: 30px;" onclick="alert('You clicked this button')">Click me!!</button>
   <button style="padding: 30px;" id = "updateBtn" >Update Memefi to Hamster</button>
   <button style="padding: 30px;" id = "resetButton" >Reset</button>
 
+  <input type="text" id="crypto" placeholder="Enter crypto you want to buy..." style="margin: 10px 10px; padding: 10px;" />
+  
+  <p>The value of the above is: <span id="spanText"></span></p>
+
   <!-- Testing adding event listeners -->
   <script>
+
+    // ------ CLICK EVENTS -----
+
+
 
     // Task: Update the memefi h1 tag to Hamster.
     // Step 1: Target the button and the h1
@@ -479,6 +486,65 @@
     resetScore.addEventListener("click", function(){
       sc.textContent = "Score 10"
     })
+
+    // --- CLICK EVENT ON H1 tags ------
+
+    // let majorH1 = document.getElementById("hq")
+
+    let majorH1 = document.getElementById("hq")
+
+    // --- CALLBACK FUNCTION INSIDE AN EVENT LISTENER ---
+
+    // majorH1.addEventListener("click", function (){
+    //   alert('You clicked on the h1 tag with id of "hq" ')
+    // })
+
+    majorH1.addEventListener("click",  () => {
+      alert('You clicked on the h1 tag with id of "hq" ')
+    })
+
+    // ---- INPUT EVENTS ----
+
+    let cryptoInput = document.getElementById("crypto")
+    let spanText = document.getElementById("spanText")
+
+    cryptoInput.addEventListener("input", (event)=>{
+      console.log(event.target.value)
+      spanText.textContent = event.target.value
+    })
+
+    // TASK ON EVENT --- MOUSE EVENTS ---- Freestyle on this, target as much elements say 3 each with a specific mouse events e.g mouseover, mouseclick, dblclick
+
+
+    let textEvent = [1, 2, 3, 4, 6]
+
+    let event = {name: "Sixtus", age: 30, isMarried: false, target: {value: "xpr"}}
+    
+    // function randomFunc = (name) => {
+    //   console.log("This is from my function", name)
+    // }
+
+
+
+    // () --- This is normal brackets or braces majorly used in functions
+    // {} --- This is a curly braces/brackets majorly used in func
+    // [] ---This is a square brackets, used in arrays indexing
+
+    // majorH1.addEventListener("click", function(){
+
+    // })
+
+    let addName = () => {
+      console.log("Hello world!!")
+    }
+
+    let _addName = () => {
+
+    }    
+
+
+    // ---- INPUT EVENTS ------
+
 
 
       // DOM
