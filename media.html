@@ -448,6 +448,16 @@
   <input type="text" id="crypto" placeholder="Enter crypto you want to buy..." style="margin: 10px 10px; padding: 10px;" />
   
   <p>The value of the above is: <span id="spanText"></span></p>
+  <br>
+
+
+  <!-- Adding eventlistener as week assignment -->
+
+  <button style="padding: 30px;" id =clickme>Click Me</button>
+  <button style="padding: 30px;" id =dblclick>Double Click Me</button>
+  <button style="padding: 30px;" id =hoverme>Hover over Me</button>
+
+ 
 
   <!-- Testing adding event listeners -->
   <script>
@@ -514,6 +524,24 @@
     })
 
     // TASK ON EVENT --- MOUSE EVENTS ---- Freestyle on this, target as much elements say 3 each with a specific mouse events e.g mouseover, mouseclick, dblclick
+
+    const clickme = document.getElementById("clickme")
+     const dblclick = document.getElementById("dblclick")
+     const hoverme = document.getElementById("hoverme")
+
+     clickme.addEventListener("click", function(){
+      console.log("Element clicked")
+     })
+
+     dblclick.addEventListener("dblclick", function(){
+      console.log("Element was Double Clicked")
+     })
+
+     hoverme.addEventListener("mouseover", function() {
+      console.log("Mouse Over the element")
+     })
+     
+// end of it
 
 
     let textEvent = [1, 2, 3, 4, 6]
@@ -630,6 +658,7 @@
      * 
      *  */
 
+    
 
 
 
