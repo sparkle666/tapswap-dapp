@@ -22,3 +22,13 @@ export default addFourNumbers
 let sum = addTwoNumbers(20, 80)
 
 console.log(sum)
+
+
+// Work for Export and Import
+
+export function force (m , a){
+    let force = m * a
+    console.log(force)
+
+}
+
