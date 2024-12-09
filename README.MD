@@ -40,3 +40,9 @@ Emphasis Tags (<strong>, <em>): Highlight key terms and concepts related to Web3
 <sup> - Superscript text
 
 
+
+<!-- Before Web3 -->
+
+Making module and imports
+Async Await E.g using the Fetch api
+The new keyword for class instance creation
