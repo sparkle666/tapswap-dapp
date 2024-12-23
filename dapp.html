@@ -42,6 +42,11 @@
             display: none;
 
         }
+        .my-btn:disabled{
+            background-color: rgb(119, 119, 119);
+            color: white;
+            cursor: not-allowed;
+        }
     </style>
 </head>
 <body>
@@ -54,31 +59,10 @@
             <p class="hidden" id="hidden-para">Address: Asjk090309923090</p>
             <div>
                 <button id="connect-btn" class="my-btn">Connect Wallet</button>
-                <button id="disconnect-btn" class="my-btn">Disconnect Wallet</button>
+                <button id="disconnect-btn" class="my-btn" disabled>Disconnect Wallet</button>
             </div>
         </div>
     </div>
-    <!-- <div class="bg-blue-400 flex items-center justify-center h-screen">
-        <div class="bg-white shadow-md rounded-md p-6 text-center">
-            <p id="messageParagraph" class="my-6"></p>
-            <h1 class="text-2xl font-bold text-gray-700 mb-4">Solana dApp</h1>
-            <div id="wallet-info" class="mb-4">
-                <p class="text-gray-500" id="walletAddress">No wallet connected</p>
-            </div>
-            <button 
-                id="connect-btn" 
-                class="bg-blue-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition"
-            >
-                Connect Wallet
-            </button>
-            <button 
-                id="disconnect-btn" 
-                class="bg-red-500 text-white font-semibold px-4 py-2 rounded-md mt-4 hidden hover:bg-red-600 transition"
-            >
-                Disconnect Wallet
-            </button>
-        </div>
-    </div> -->
 
     <script>
         let btnConnect = document.getElementById("connect-btn")
@@ -99,8 +83,17 @@
 
             try{
                 let response = await window.solana.connect()
+                let publicKey = response.publicKey.toString()
+
                 console.log(response)
-                
+                console.log("The address is:", publicKey)
+
+                walletAddress.innerText = "Wallet Address: " + publicKey
+                walletAddress.classList.remove("hidden")
+
+                btnConnect.innerText = "Connected"
+                btnConnect.disabled = true
+                btnDisconnect.disabled = false
             }
             catch(error){
                 console.log("The message:", error.message)
@@ -109,11 +102,25 @@
             }
             
 
-
             // Asynchronous Programming in js
 
         })
 
+        btnDisconnect.addEventListener("click", async ()=>{
+            console.log("You clicked the disconnect button!!")
+            try{
+                let response = await window.solana.disconnect()
+                console.log("Disconnected: ", response)
+                btnConnect.innerText = "Connect Wallet"
+                btnConnect.disabled = false
+                btnDisconnect.disabled = true
+                walletAddress.classList.add("hidden")
+
+            }
+            catch(error){
+                console.log("The message:", error.message)
+            }
+        })
 
     </script>
 </body>
